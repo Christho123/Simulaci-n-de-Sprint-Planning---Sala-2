@@ -26,11 +26,11 @@ Permitir que los pacientes se registren y tener un registro con la programación
 
 | Integrante           |  Creación del formulario |  Creación de base de datos |  Notificaciones al correo | Conexión a la base de datos | Validar disponibilidad | Despliegue del formulario |  Documentar el proyecto |
 |----------------------|--------------------------|----------------------------|---------------------------|-----------------------------|------------------------|---------------------------|-------------------------|
-| Gadiel Collazos      |                          |                            | X                         |                             |                        |                           | X                       |
-| Diego Espinoza       |                          |                            |                           |                             | X                      |                           |                         |
-| Alfredo Gonzales     |                          |                            |                           |                             |                        |                           | X                       |
-| Edson Rojas          | X                        |                            |                           |                             |                        |                           |                         |
-| Christopher Sosa     |                          | X                          |                           | X                           |                        |                           |                         |
+| Gadiel Collazos      |                          |                            |             X             |                             |                        |             X             |            X            |
+| Diego Espinoza       |                          |                            |                           |                             |                        |                           |                         |
+| Alfredo Gonzales     |                          |                            |                           |                             |           X            |                           |            X            |
+| Edson Rojas          |            X             |                            |                           |                             |                        |                           |                         |
+| Christopher Sosa     |                          |             X              |                           |              X              |                        |                           |                         |
 
 ## Tecnologías Usadas
 - HTML
