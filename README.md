@@ -31,3 +31,15 @@ Permitir que los pacientes se registren y tener un registro con la programación
 | Alfredo Gonzales     |                          |                            |                           |                             |                        |                           | X                       |
 | Edson Rojas          | X                        |                            |                           |                             |                        |                           |                         |
 | Christopher Sosa     |                          | X                          |                           | X                           |                        |                           |                         |
+
+## Tecnologías Usadas
+- HTML
+- PHP
+- SQL
+- Base de datos con Oracle
+- JavaScript
+- CSS
+- Node
+
+## Metodología Ágil
+- SCRUM
