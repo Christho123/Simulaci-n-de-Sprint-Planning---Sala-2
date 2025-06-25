@@ -95,6 +95,35 @@
 
     <button type="submit">Registrar Cita</button>
   </form>
+  <script>
+    document.getElementById('registroForm').addEventListener('submit', function(e) {
+
+      const form = e.target;
+      const email = form.correo.value;
+      const nombre = form.nombre.value;
+      const apellido = form.apellido.value;
+      const horaCita = form.hora_cita.value;
+
+      const mensaje = `Hola ${nombre} ${apellido},\n\n¡Bienvenido/a! Su cita médica ha sido registrada correctamente.\nSu cita está agendada para el día y hora: ${horaCita}.\n\n¡Gracias por confiar en nosotros!`;
+
+      fetch('http://localhost:3000/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, mensaje })
+      })
+      .then(response => response.json())
+      .then(result => {
+        if (result.success) {
+          console.log('Correo de bienvenida enviado correctamente');
+        } else {
+          console.log('Error al enviar el correo:', result.error || '');
+        }
+      })
+      .catch(err => {
+        console.log('Error de red o servidor al enviar el correo');
+      });
+    });
+  </script>
 
 </body>
 </html>
