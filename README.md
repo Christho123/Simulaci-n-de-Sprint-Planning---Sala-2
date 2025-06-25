@@ -22,3 +22,12 @@ Permitir que los pacientes se registren y tener un registro con la programación
 - Despliegue del formulario de citas
 - Documentar el proyecto
 
+### Asignación de Tareas
+
+| Integrante           |  Creación del formulario |  Creación de base de datos |  Notificaciones al correo | Conexión a la base de datos | Validar disponibilidad | Despliegue del formulario |  Documentar el proyecto |
+|----------------------|--------------------------|----------------------------|---------------------------|-----------------------------|------------------------|---------------------------|-------------------------|
+| Gadiel Collazos      |                          |                            | X                         |                             |                        |                           | X                       |
+| Diego Espinoza       |                          |                            |                           |                             | X                      |                           |                         |
+| Alfredo Gonzales     |                          |                            |                           |                             |                        |                           | X                       |
+| Edson Rojas          | X                        |                            |                           |                             |                        |                           |                         |
+| Christopher Sosa     |                          | X                          |                           | X                           |                        |                           |                         |
