@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Registro de Cita Médica</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      background-color: #28a745;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Registro de Cita Médica</h2>
+
+  <form action="procesar_registro.php" method="POST">
+    <label for="id_registro">ID Registro:</label>
+    <input type="number" name="id_registro" id="id_registro" required>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" id="nombre" required>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" name="apellido" id="apellido" required>
+
+    <label for="tipo_documento">Tipo de Documento:</label>
+    <select name="tipo_documento" id="tipo_documento" required>
+      <option value="">--Seleccione--</option>
+      <option value="DNI">DNI</option>
+      <option value="Pasaporte">Pasaporte</option>
+      <option value="Carnet de Extranjería">Carnet de Extranjería</option>
+    </select>
+
+    <label for="cod_documento">Código de Documento:</label>
+    <input type="number" name="cod_documento" id="cod_documento" required>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" name="correo" id="correo" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="number" name="telefono" id="telefono" required>
+
+    <label for="genero">Género:</label>
+    <select name="genero" id="genero" required>
+      <option value="">--Seleccione--</option>
+      <option value="Masculino">Masculino</option>
+      <option value="Femenino">Femenino</option>
+      <option value="Otro">Otro</option>
+    </select>
+
+    <label for="especialidad">Especialidad:</label>
+    <input type="text" name="especialidad" id="especialidad" required>
+
+    <label for="nombre_doctor">Nombre del Doctor:</label>
+    <input type="text" name="nombre_doctor" id="nombre_doctor" required>
+
+    <label for="hora_cita">Hora y Fecha de la Cita:</label>
+    <input type="datetime-local" name="hora_cita" id="hora_cita" required>
+
+    <button type="submit">Registrar Cita</button>
+  </form>
+
+</body>
+</html>
