@@ -1,0 +1,14 @@
+CREATE TABLE registro (
+    id_registro    INT PRIMARY KEY,
+    nombre         VARCHAR2(100),
+    apellido       VARCHAR2(100),
+    tipo_documento VARCHAR2(50),
+    cod_documento  NUMBER(20),
+    correo         VARCHAR2(200),
+    telefono       NUMBER(15),
+    genero         VARCHAR2(20),
+    especialidad   VARCHAR2(100),
+    nombre_doctor  VARCHAR2(100),
+    hora_cita      DATE,
+    fec_registro   TIMESTAMP DEFAULT systimestamp
+);
